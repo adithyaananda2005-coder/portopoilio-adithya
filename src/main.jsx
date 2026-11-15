@@ -1,0 +1,14 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './index.css';
+import './reference-layout.css';
+import './opening.css';
+import './personal-details.css';
+import './summit.css';
+import './image-fixes.css';
+import './awards.css';
+import './portfolio-studio.css';
+import './page-continuity.css';
+import './hero-continuity.css';
+createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);

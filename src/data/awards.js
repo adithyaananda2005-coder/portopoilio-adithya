@@ -1,0 +1,27 @@
+export const awards = [
+  {
+    id: 'paskibraka-jombang-2021',
+    title: 'Penghargaan Paskibraka Kabupaten Jombang',
+    category: 'PRESTASI SMA · 2021',
+    organizer: 'Bupati Jombang',
+    year: '2021',
+    date: '17 Agustus 2021',
+    description: 'Piagam penghargaan dari Bupati Jombang atas peran serta sebagai anggota Pasukan Pengibar Bendera Pusaka pada Upacara Peringatan Hari Kemerdekaan ke-76 Republik Indonesia di Kabupaten Jombang. Mewakili SMA Negeri Kabuh.',
+    image: '/images/awards/paskibraka-jombang-2021.jpg',
+    url: '/images/awards/paskibraka-jombang-2021.jpg',
+    document: true,
+    imageRotation: -90,
+  },
+  {
+    id: 'duta-pancasila-2021',
+    title: 'Purnapaskibraka Duta Pancasila',
+    category: 'PRESTASI SMA · 2021',
+    organizer: 'Badan Pembinaan Ideologi Pancasila Republik Indonesia',
+    year: '2021',
+    date: '18 Agustus 2021',
+    description: 'Piagam Duta Pancasila dari Badan Pembinaan Ideologi Pancasila Republik Indonesia sebagai Purnapaskibraka Duta Pancasila dari Kabupaten Jombang.',
+    image: '/images/awards/duta-pancasila-2021.jpg',
+    url: '/images/awards/duta-pancasila-2021.jpg',
+    document: true,
+  },
+];

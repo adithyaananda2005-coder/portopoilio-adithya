@@ -1,0 +1,4 @@
+import { motion } from 'framer-motion';
+export default function Navbar({ active }) {
+  return <header className="nav-wrap"><nav aria-label="Main navigation">{['home', 'about', 'portfolio', 'contact'].map(item => <a key={item} href={`#${item}`} className={active === item ? 'active' : ''} aria-current={active === item ? 'location' : undefined}>{active === item && <motion.span className="nav-mascot" layoutId="nav-mascot" transition={{type:'spring',stiffness:280,damping:25}} aria-hidden="true"><svg viewBox="0 0 40 48"><path d="M20 35 14 42 20 47 26 42Z" fill="white"/><rect x="5" y="3" width="30" height="31" rx="14" fill="white"/><rect x="11" y="13" width="6" height="8" rx="3" fill="#0b1120"/><rect x="23" y="13" width="6" height="8" rx="3" fill="#0b1120"/><path d="M15 26q5 4 10 0" fill="none" stroke="#326bff" strokeWidth="2"/></svg></motion.span>}{item}</a>)}</nav></header>;
+}

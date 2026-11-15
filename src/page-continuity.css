@@ -1,0 +1,49 @@
+/* One continuous landscape: navy canvas, shared panels, and consistent typography. */
+.cinematic-opening:not(.scene-ready) .hero-bottom,.cinematic-opening:not(.scene-ready) .hero-photo-credit{color:#c6d5e8;text-shadow:0 1px 6px #030b17}
+.forest-foreground{mask-image:linear-gradient(#000 88%,transparent 100%)}
+.hero .cloudscape-hd{mask-image:linear-gradient(to bottom,#000 0%,#000 86%,transparent 100%)}
+.hero.cinematic-opening .hero-shade{background:linear-gradient(180deg,#07102155,transparent 34%,#07102115 66%,#050816 100%)}
+#portfolio.portfolio{border-bottom:0;background:radial-gradient(ellipse at 5% 0%,#1b3c6659,transparent 42%),radial-gradient(ellipse at 95% 90%,#34305b40,transparent 45%),linear-gradient(#050816,#090f1c 22%,#090f1c)}
+#contact.contact{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 90% 25%,#24365e45,transparent 55%),linear-gradient(#090f1c,#080e1a);color:#eff4ff;padding:65px 0 0}
+#contact:before{content:'';position:absolute;inset:0;z-index:-1;background:url('/images/contours.svg') right bottom/1100px 800px;opacity:.06;pointer-events:none;mask-image:linear-gradient(transparent,#000)}
+#contact .section-meta{display:flex;font-size:8px;letter-spacing:2px;color:#7185a3;margin-bottom:45px;padding-top:30px;border-top:1px solid #26344b}
+#contact .contact-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:35px;margin-bottom:40px}
+#contact .contact-heading h2{font-size:clamp(34px,4vw,54px);font-weight:500;line-height:1.18;letter-spacing:-2px}
+#contact .contact-heading h2>span:not(.blue){color:#a3b6d2}
+#contact .contact-heading h2>.blue{color:#99c3ff;display:inline-block;font-weight:400;margin-left:15px}
+#contact .contact-heading p{color:#8b9eb9;font-size:12px;line-height:1.9;max-width:310px}
+#contact .contact-grid{grid-template-columns:1fr 1.6fr;gap:25px;align-items:stretch}
+#contact .find-card,#contact .form-card{background:linear-gradient(145deg,#172336e6,#101a2be6);border:1px solid #2b394f;box-shadow:0 15px 40px #03091620;border-radius:18px;padding:32px}
+#contact .find-card>.eyebrow,#contact .form-card>.eyebrow{display:block;font-size:8px;letter-spacing:2px;color:#8dabc4;margin-bottom:13px}
+#contact .find-card h3,#contact .form-card h3{font-size:27px;font-weight:500;letter-spacing:-.8px;margin:0 0 25px}
+#contact h3 .blue{color:#a2c8ff}
+#contact .social-list>a,#contact .social-unavailable{color:#ced9e9;padding:15px 0;border-color:#2c394d;font-size:12px;gap:14px}
+#contact .social-list>a>svg:first-child{color:#9ebfff;padding:9px;box-sizing:content-box;border:1px solid #334762;background:#21324b;border-radius:11px;flex-shrink:0}
+#contact .social-list>a>svg:last-child{color:#7e96b7;flex-shrink:0}
+#contact .social-list>a small{color:#8da0ba;font-size:10px;line-height:1.6;overflow-wrap:anywhere}
+#contact .social-list>a:hover{color:#fff;padding-left:4px}
+#contact .social-list>a:hover>svg:first-child{background:#326bff;color:#fff;border-color:#4b81ff}
+#contact .social-unavailable small{color:#8090a9}
+#contact .contact-personal{margin-top:26px}
+#contact .contact-personal .portrait.small{height:210px;background:radial-gradient(ellipse at 50% 90%,#335a954d,transparent 70%),#111d31;border:1px solid #2c3b54;border-radius:11px;padding-top:12px}
+#contact .contact-personal .portrait.small img{object-position:center top}
+#contact .contact-personal p{font-size:11px;color:#8c9fb9;margin-top:12px;line-height:1.8}
+#contact .contact-personal strong{color:#c2d1e7;font-weight:450}
+#contact form label{font-size:11px;color:#b8c8df;gap:10px;margin-bottom:23px;font-weight:400}
+#contact input,#contact textarea{background:#0c1525;border:1px solid #2e3d55;border-radius:9px;color:#e6eefb;font-size:12px;padding:14px 15px;line-height:1.6}
+#contact input::placeholder,#contact textarea::placeholder{color:#637690}
+#contact input:hover,#contact textarea:hover{border-color:#486084}
+#contact input:focus,#contact textarea:focus{border-color:#719dff;box-shadow:0 0 0 3px #326bff1c}
+#contact textarea{min-height:155px}
+#contact .form-bottom .button{padding:15px 22px;border-radius:50px;justify-content:space-between;font-size:12px;background:#326bff;border:1px solid #5a87ff;box-shadow:0 7px 25px #326bff18}
+#contact .form-bottom .button:hover{background:#447aff;box-shadow:0 10px 30px #326bff30}
+#contact .form-notice{background:#0c182a;border-radius:8px;padding:12px;color:#a6c3ef;border:1px solid #324a6b;font-size:11px}
+#contact .form-notice:empty{display:none}
+#contact footer{margin-top:65px;border-top:1px solid #26344b;padding:28px 0 32px;color:#c9d7ec;gap:25px}
+#contact .footer-brand{font-size:22px;font-weight:550;color:#dce7f7}
+#contact .footer-brand svg{color:#9cc2fa}
+#contact footer p{font-size:10px;color:#7b8fae;line-height:1.8}
+#contact footer>a:last-child{font-size:10px;color:#a6bcda;padding:9px 14px;border:1px solid #2f4059;border-radius:30px;transition:background .25s}
+#contact footer>a:last-child:hover{background:#1c2e49;color:#fff}
+@media(max-width:1000px){#contact .contact-grid{grid-template-columns:1fr 1.4fr}#contact .find-card,#contact .form-card{padding:26px}#contact .contact-heading{gap:25px}#contact .contact-heading h2{font-size:38px}}
+@media(max-width:700px){#contact.contact{padding-top:25px}#contact .section-meta{font-size:7px;margin-bottom:30px;padding-top:25px}#contact .section-meta>span:last-child{display:none}#contact .contact-heading{display:block;margin-bottom:28px}#contact .contact-heading h2{font-size:34px;letter-spacing:-1.6px}#contact .contact-heading p{margin-top:18px;font-size:11px;line-height:1.8}#contact .contact-grid{grid-template-columns:1fr;gap:20px}#contact .find-card,#contact .form-card{padding:25px;border-radius:16px}#contact .find-card h3,#contact .form-card h3{font-size:25px}#contact .social-list>a small{font-size:10px}#contact .contact-personal{display:flex;gap:15px}#contact .contact-personal .portrait.small{width:82px;height:102px;padding:5px 4px 0;margin:0;flex-shrink:0}#contact .contact-personal p{margin:0;font-size:11px}#contact .form-row{grid-template-columns:1fr;gap:0}#contact input,#contact textarea{font-size:16px}#contact input::placeholder,#contact textarea::placeholder{font-size:12px}#contact footer{margin-top:40px;gap:18px;padding:25px 0}#contact footer p{font-size:9px;width:100%;order:3}#contact footer>a:last-child{margin-left:auto}}

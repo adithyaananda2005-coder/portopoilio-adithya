@@ -1,0 +1,18 @@
+.cinematic-opening{perspective:1100px}
+.cinematic-opening .hero-landscape{animation:none;scale:1;transform-origin:50% 63%}
+.cinematic-opening.scene-ready .hero-landscape{animation:camera-enter 3.2s cubic-bezier(.18,.65,.22,1) both}
+.forest-foreground{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+.forest-edge{position:absolute;top:-8%;height:120%;width:46%;filter:brightness(.7);transform-origin:0% 55%}
+.forest-left{left:-3%;transform:scale(1)}
+.forest-right{right:-3%;transform:scaleX(-1);transform-origin:100% 55%}
+.scene-ready .forest-left{animation:forest-pass-left 2.8s cubic-bezier(.4,0,.2,1) both}
+.scene-ready .forest-right{animation:forest-pass-right 2.8s cubic-bezier(.4,0,.2,1) both}
+.cinematic-opening .hero-bottom{animation:none}
+.cinematic-opening:not(.scene-ready) .hero-bottom{opacity:1}
+.cinematic-opening.scene-ready .hero-bottom{animation:opening-controls .8s 2.6s both}
+@keyframes camera-enter{0%{scale:1;filter:brightness(.6)}100%{scale:1.2;filter:brightness(1)}}
+@keyframes forest-pass-left{0%,12%{transform:translateX(0) scale(1);opacity:1}82%{opacity:1}100%{transform:translateX(-105%) scale(1.65);opacity:0;visibility:hidden}}
+@keyframes forest-pass-right{0%,12%{transform:translateX(0) scale(-1,1);opacity:1}82%{opacity:1}100%{transform:translateX(105%) scale(-1.65,1.65);opacity:0;visibility:hidden}}
+@keyframes opening-controls{from{opacity:0}to{opacity:1}}
+@media(max-width:700px){.forest-edge{width:51%;height:118%}.forest-left{left:-6%}.forest-right{right:-6%}}
+@media(prefers-reduced-motion:reduce){.forest-foreground{display:none}.cinematic-opening .hero-landscape{animation:none!important;scale:1;filter:none}.cinematic-opening .hero-bottom{opacity:1!important;animation:none!important}}

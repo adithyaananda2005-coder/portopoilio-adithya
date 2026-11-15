@@ -1,0 +1,19 @@
+/* Photographic alpha clouds replace blurred gradient fog. */
+.cloudscape-hd{z-index:2;contain:layout paint}
+.ocean-layer{position:absolute;pointer-events:none;transform-origin:center bottom}
+.ocean-layer img{display:block;width:100%;height:auto;max-width:none;user-select:none}
+.ocean-panorama{width:110%;left:-5%;bottom:-10%;opacity:1}
+.ocean-west{width:62%;left:-22%;bottom:-14%;opacity:.9}
+.ocean-east{width:62%;right:-22%;bottom:-14%;opacity:.9;transform:scaleX(-1)}
+.scene-ready .ocean-panorama{animation:ocean-through 2.8s cubic-bezier(.35,0,.2,1) both}
+.scene-ready .ocean-west{animation:ocean-west-through 2.8s cubic-bezier(.35,0,.2,1) both}
+.scene-ready .ocean-east{animation:ocean-east-through 2.8s cubic-bezier(.35,0,.2,1) both}
+.cinematic-opening .hero-landscape{filter:none!important;backface-visibility:hidden}
+.cinematic-opening .hero-shade{background:linear-gradient(180deg,#07102155,transparent 34%,#07102115 70%,#050816a6)}
+.cinematic-opening:not(.scene-ready) .hero-bottom,.cinematic-opening:not(.scene-ready) .hero-photo-credit{color:#31465f;text-shadow:0 1px 3px #fff9}
+@keyframes ocean-through{0%,8%{transform:scale(1);opacity:1}60%{opacity:1}100%{transform:translateY(55%) scale(1.5);opacity:0;visibility:hidden}}
+@keyframes ocean-west-through{0%,8%{transform:translateX(0);opacity:.9}65%{opacity:.9}100%{transform:translateX(-65%) scale(1.45);opacity:0;visibility:hidden}}
+@keyframes ocean-east-through{0%,8%{transform:translateX(0) scaleX(-1);opacity:.9}65%{opacity:.9}100%{transform:translateX(65%) scale(-1.45,1.45);opacity:0;visibility:hidden}}
+@media(min-width:1800px){.ocean-panorama{width:100%;left:0;bottom:-16%}.ocean-west,.ocean-east{bottom:-20%}}
+@media(max-width:700px){.ocean-panorama{width:260%;left:-80%;bottom:-10%}.ocean-west{width:170%;left:-115%;bottom:-10%}.ocean-east{width:170%;right:-115%;bottom:-10%}.cinematic-opening .hero-photo-credit{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.ocean-layer{animation:none!important}.scene-ready .ocean-layer{opacity:0;visibility:hidden}}

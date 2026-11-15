@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.reference/
+.video-tools/
+.git/
+.env
+.env.*
+!.env.example

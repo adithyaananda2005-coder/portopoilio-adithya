@@ -1,0 +1,17 @@
+/* Keep the portrait's head inside the contact-card crop at every breakpoint. */
+.project-source-link{display:inline-flex;align-items:center;gap:5px;font-size:10px;color:#326bff;margin:12px 14px 0 0}.project-source-link:hover{text-decoration:underline;text-underline-offset:3px}
+.contact-personal .portrait.small{height:235px;padding:10px 18px 0;background:linear-gradient(145deg,#e5edf7,#dce6f2);border:1px solid #d9e3ef;border-radius:12px}
+.contact-personal .portrait.small img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;mask-image:none;border-radius:0}
+/* Preserve the source photograph's detail: no grain or color/blur filter. */
+.cinematic-opening .hero-grain{display:none}
+.cinematic-opening .hero-landscape{background-image:url('/images/raung-hd.jpg');filter:none;image-rendering:auto;background-position:center 30%;inset:0;transform-origin:45% 35%}
+.cinematic-opening .hero-shade{background:linear-gradient(180deg,#07102144,transparent 35%,#07102115 65%,#050816dd)}
+.cloud-distant{opacity:.58;bottom:11%;height:27%;filter:blur(16px)}
+.cloud-left,.cloud-right{opacity:.95;bottom:-8%;height:45%;filter:blur(12px)}
+.cloud-middle{left:-15%;bottom:0;width:130%;height:32%;opacity:.85;filter:blur(13px);background:radial-gradient(ellipse at 10% 65%,#edf3fa 0%,#dce7f2c9 23%,transparent 47%),radial-gradient(ellipse at 35% 45%,#f6f8fc 0%,#cfdeedce 24%,transparent 49%),radial-gradient(ellipse at 65% 65%,#e6eef8 0%,#c9d9eabf 28%,transparent 52%),radial-gradient(ellipse at 90% 40%,#f1f5fb 0%,#dbe6f0bb 25%,transparent 48%)}
+.cloud-rolling{left:-10%;bottom:-7%;width:120%;height:29%;opacity:.9;filter:blur(8px);background:radial-gradient(ellipse at 5% 70%,#e9f1fa 0%,#d9e5f2ed 28%,transparent 48%),radial-gradient(ellipse at 28% 55%,#f8fbff 0%,#e3ecf6e6 26%,transparent 48%),radial-gradient(ellipse at 52% 70%,#e6eef8 0%,#d3e1f0e6 29%,transparent 50%),radial-gradient(ellipse at 77% 45%,#f4f8fd 0%,#dce8f4e6 25%,transparent 48%),radial-gradient(ellipse at 97% 65%,#e7eff8 0%,#d4e1efee 28%,transparent 50%)}
+.cloud-near{opacity:.95;bottom:-12%;height:31%;filter:blur(14px);background:radial-gradient(ellipse at 25% 70%,#f2f7fc 0%,#dce7f3ee 37%,transparent 65%),radial-gradient(ellipse at 75% 75%,#eef4fb 0%,#d6e3f1ee 38%,transparent 66%)}
+.scene-ready .cloud-middle{animation:cloud-pass-distant 2.8s ease-in both}.scene-ready .cloud-rolling{animation:cloud-pass-near 2.8s ease-in both}
+.cinematic-opening:not(.scene-ready) .hero-bottom,.cinematic-opening:not(.scene-ready) .hero-photo-credit{color:#41556d;text-shadow:0 1px 4px #ffffff66}
+@keyframes camera-enter{from{scale:1}to{scale:1.08}}
+@media(max-width:700px){.contact-personal .portrait.small{width:88px;height:110px;padding:4px 5px 0;flex-shrink:0}.cinematic-opening .hero-landscape{background-position:35% 25%}.cloud-left,.cloud-right{bottom:-6%;height:39%}.cloud-middle{height:29%}.cloud-distant{bottom:10%;height:24%}}

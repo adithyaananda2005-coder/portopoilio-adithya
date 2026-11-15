@@ -1,0 +1,68 @@
+/* A dedicated studio/gallery treatment for the portfolio collection. */
+#portfolio.portfolio{padding:105px 0 75px;background:radial-gradient(ellipse at 5% 0%,#1b3c6659,transparent 42%),radial-gradient(ellipse at 95% 90%,#34305b40,transparent 45%),#090f1c;color:#eff4ff;border-top:1px solid #ffffff0c;border-bottom:1px solid #ffffff0a}
+#portfolio.light-contour:before{opacity:.055}
+#portfolio .section-meta{display:flex;color:#6f829e;margin-bottom:50px;letter-spacing:2px}
+#portfolio .portfolio-heading{flex-direction:row;align-items:flex-end;justify-content:space-between;text-align:left;gap:35px;margin-bottom:40px}
+#portfolio .portfolio-heading .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#9bbba9;font-size:9px;letter-spacing:2px}
+#portfolio .portfolio-heading .eyebrow:before{content:'';height:5px;width:5px;border-radius:50%;background:#ade8cb;box-shadow:0 0 13px #ade8cb55}
+#portfolio h2{font-size:clamp(40px,4.9vw,68px);font-weight:550;letter-spacing:-3px;line-height:1.15;margin:14px 0 18px}
+#portfolio h2 .blue{display:inline;color:#a2c8ff}
+#portfolio .portfolio-heading p{display:block;color:#8698b1;max-width:350px;font-size:12px;line-height:1.8}
+#portfolio .segmented{width:auto;min-width:430px;padding:6px;background:#131d2d;border:1px solid #2b384d;border-radius:50px;box-shadow:0 5px 20px #0001;gap:4px}
+#portfolio .segmented button{display:flex;flex-direction:row;justify-content:center;gap:8px;padding:13px 16px;border-radius:40px;color:#99aac1;font-size:10px;transition:background .25s,color .25s,box-shadow .25s}
+#portfolio .segmented button:hover{background:#22304a;color:#fff}
+#portfolio .segmented button.selected{background:#326bff;color:#fff;box-shadow:0 4px 15px #326bff35}
+#portfolio .segmented button>span{font-size:8px;color:inherit;opacity:.65;white-space:nowrap}
+#portfolio .segmented .tab-icon{width:14px;height:14px;flex-shrink:0}
+#portfolio .carousel{gap:24px;padding:10px 1px 25px;align-items:stretch}
+#portfolio .project-card{--accent:#a8e5c5;position:relative;flex:0 0 calc((100% - 48px)/3);display:flex;flex-direction:column;border-radius:18px;border:1px solid #2b384a;background:linear-gradient(160deg,#172335,#0f1828);box-shadow:0 15px 35px #0002;transition:transform .35s,border-color .35s,box-shadow .35s}
+#portfolio .project-card:hover{transform:translateY(-7px);border-color:var(--accent);box-shadow:0 20px 45px #0003}
+#portfolio .project-card[data-project="parkir-rek"]{--accent:#92bdff}
+#portfolio .project-card[data-project="credifox"]{--accent:#d5df9b}
+#portfolio .project-card[data-project="pendekin"]{--accent:#c7a9ff}
+#portfolio .project-art{position:relative;border:0;border-radius:0;height:265px;flex-shrink:0;color:#254339;background:linear-gradient(145deg,#b7d8ba,#e0efc7);isolation:isolate}
+#portfolio .project-art:before{content:'';position:absolute;inset:0;z-index:-1;background-image:linear-gradient(#25433909 1px,transparent 1px),linear-gradient(90deg,#25433909 1px,transparent 1px);background-size:23px 23px;mask-image:linear-gradient(#000,transparent)}
+#portfolio .art-caption{top:20px;left:21px;font-size:7px;letter-spacing:1.7px}
+#portfolio .concept-label{bottom:11px;right:12px;background:#ffffff70;color:#344756;font-size:6px;letter-spacing:1.1px;border-radius:20px;padding:5px 8px;backdrop-filter:blur(8px)}
+#portfolio .mock-browser{top:65px;left:11%;right:11%;height:230px;background:#f9fff3;box-shadow:0 18px 30px #263e3c26;border:1px solid #ffffff9c;border-radius:10px;transform:rotate(-6deg)}
+#portfolio .mock-content{padding:23px}
+#portfolio .mock-content strong{font-size:37px;font-weight:650;letter-spacing:-2px;margin-top:13px}
+#portfolio .mock-label{font-size:5px;letter-spacing:1.2px}
+#portfolio .browser-dots{padding:10px 13px}
+#portfolio .mock-blocks{gap:7px;margin-top:25px}
+#portfolio .mock-blocks i{height:57px;border-radius:6px}
+#portfolio [data-project="parkir-rek"] .project-art{background:linear-gradient(135deg,#6e9bdc,#b5d0fa);color:#1d427c}
+#portfolio [data-project="parkir-rek"] .mock-browser{left:18%;right:18%;top:56px;background:#eef5ff;transform:rotate(6deg);border-bottom:1px dashed #79a0db}
+#portfolio [data-project="parkir-rek"] .mock-content strong{font-size:32px;line-height:1.05;max-width:100px}
+#portfolio [data-project="parkir-rek"] .mock-line{margin-top:20px;width:100%;height:2px;background:repeating-linear-gradient(90deg,#6c8cb6 0 5px,transparent 5px 10px);opacity:.5}
+#portfolio [data-project="parkir-rek"] .mock-blocks i{height:25px;background:repeating-linear-gradient(90deg,#24519b 0 2px,transparent 2px 5px);opacity:.5;border-radius:0}
+#portfolio [data-project="pendekin"] .project-art{background:radial-gradient(circle at 80% 10%,#d6baff,transparent 55%),#a89aeb;color:#4b337a}
+#portfolio [data-project="pendekin"] .mock-browser{background:#302148;color:#edddff;top:63px;transform:rotate(-4deg);box-shadow:0 18px 40px #3b23664d}
+#portfolio [data-project="pendekin"] .mock-blocks i{border-radius:50px;height:25px;background:#d3b5ff;opacity:.3}
+#portfolio [data-project="pendekin"] .mock-blocks i:first-child{flex:3}
+#portfolio [data-project="credifox"] .project-art{background-size:cover;background-color:#ebeede;border:12px solid #cbd6b1}
+#portfolio .project-art:hover .mock-browser{transform:translateY(-8px) rotate(0deg)}
+#portfolio .project-info{display:flex;flex-direction:column;flex:1;padding:25px 23px 23px}
+#portfolio .project-info .eyebrow{font-size:7px;line-height:1.7;letter-spacing:1.7px;color:var(--accent)}
+#portfolio .project-info h3{font-size:21px;font-weight:550;letter-spacing:-.5px;margin:12px 0}
+#portfolio .project-info>p{color:#94a4ba;font-size:11px;line-height:1.9;min-height:0;margin-bottom:20px}
+#portfolio .tags{gap:6px;margin-top:auto;margin-bottom:23px}
+#portfolio .tags span{background:#ffffff05;color:#a6b5cb;border:1px solid #344155;font-size:8px;border-radius:30px;padding:5px 9px}
+#portfolio .text-link{align-self:flex-start;color:#e0e9f9;border-color:#455572;font-size:11px;padding-bottom:8px;gap:12px}
+#portfolio .text-link svg{transition:transform .25s}
+#portfolio .text-link:hover svg{transform:translate(2px,-2px)}
+#portfolio .project-source-link{font-size:9px;color:var(--accent);margin:14px 0 0;align-self:flex-start}
+#portfolio .carousel-bottom{margin-top:10px;padding-top:20px;border-top:1px solid #27344a}
+#portfolio .carousel-bottom>span{font-size:9px;color:#7e91ae;letter-spacing:1px}
+#portfolio .circle-button{width:43px;height:43px;border-color:#35445b;background:#152033;color:#ccd9eb}
+#portfolio .circle-button:hover{background:#326bff;border-color:#326bff;color:#fff}
+#portfolio .empty-state{background:linear-gradient(135deg,#17243b,#111b2e);border:1px dashed #3b4c68;color:#8095b7;min-height:320px;border-radius:18px}
+#portfolio .empty-state h3{color:#e0eaf9;font-weight:500;font-size:24px}
+#portfolio .empty-state p{color:#8fa2bf;font-size:12px}
+#portfolio .project-card:has(.document-preview){--accent:#e9c887;flex-basis:calc((100% - 24px)/2)}
+#portfolio .project-art:has(.document-preview){height:320px;padding:0;background:#e9edf2}
+#portfolio .project-card:has(.document-preview) .project-info h3{font-size:22px;line-height:1.4;min-height:62px}
+#portfolio .project-card:has(.document-preview) .award-meta{color:#b9a984;min-height:38px}
+#portfolio .project-card:has(.document-preview) .text-link{margin-top:auto}
+@media(max-width:1100px){#portfolio .portfolio-heading{flex-direction:column;align-items:flex-start;gap:28px}#portfolio .segmented{min-width:430px}#portfolio .project-card{flex-basis:calc((100% - 24px)/2)}}
+@media(max-width:700px){#portfolio.portfolio{padding:60px 0 45px}#portfolio .section-meta{font-size:7px;margin-bottom:28px}#portfolio .portfolio-heading{gap:25px;margin-bottom:25px}#portfolio h2{font-size:43px;letter-spacing:-2px;margin:12px 0 15px}#portfolio .portfolio-heading .eyebrow{font-size:8px}#portfolio .portfolio-heading p{font-size:11px;max-width:280px}#portfolio .segmented{min-width:0;width:100%;padding:5px;gap:2px}#portfolio .segmented button{padding:12px 7px;gap:5px;font-size:9px}#portfolio .segmented button>span{font-size:7px}#portfolio .segmented .tab-icon{width:12px;height:12px}#portfolio .project-card,#portfolio .project-card:has(.document-preview){flex-basis:90%}#portfolio .carousel{gap:17px}#portfolio .project-art{height:250px}#portfolio .project-info{padding:23px 21px}#portfolio .project-info h3{font-size:21px}#portfolio .project-info>p{font-size:12px}#portfolio .project-art:has(.document-preview){height:280px}#portfolio .carousel-bottom>span{font-size:8px;letter-spacing:.5px}}
